@@ -15,7 +15,7 @@ export const TransactionTh = styled.th`
   padding: 8px;
   font-size: 20px;
   font-weight: 500;
-  color:  rgb(240, 240, 240);
-  border: 1px solid black;
+  color: rgb(240, 240, 240);
+  border: 1px solid rgb(150, 150, 150);
   background-color: rgb(33, 150, 243);
 `;

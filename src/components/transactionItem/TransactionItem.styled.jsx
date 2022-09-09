@@ -7,7 +7,7 @@ export const TransactionItemBox = styled.td`
   font-size: 16px;
   text-align: center;
   color: rgb(150, 150, 150);
-  border: 1px solid black;
+  border: 1px solid rgb(150, 150, 150);
 `;
 
 
