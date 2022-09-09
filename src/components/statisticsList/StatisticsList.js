@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import { ListContainer, ItemContainer, LabelSpan, PercentSpan } from './StatisticsList.styled';
 
 
 export default function StatisticsList({ stats }) {
     return (
 
-  <ul>
+  <ListContainer>
     {stats.map(stat => (
-           <li  key={stat.id}>          
-           <span>{stat.label}</span>
+           < ItemContainer  key={stat.id}>          
+           <LabelSpan>{stat.label}</LabelSpan>
            <> </>
-           <span>{stat.percentage}%</span>
-         </li>
+           <PercentSpan>{stat.percentage}%</PercentSpan>
+         </ItemContainer>
     ))}
-     </ul>
+     </ListContainer>
  ) 
 }
 

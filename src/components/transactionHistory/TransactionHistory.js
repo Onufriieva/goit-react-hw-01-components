@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
-import TransactionItem from './TransactionItem';
+import TransactionItem from '../transactionItem/TransactionItem';
+import {TransactionTableBox, TransactionTh} from './TransactionHistory.styled'
 
 export default function TransactionHistory({ items }) {
 return (
-<table>
+<TransactionTableBox>
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <TransactionTh>Type</TransactionTh>
+      <TransactionTh>Amount</TransactionTh>
+      <TransactionTh>Currency</TransactionTh>
     </tr>
   </thead>
 
@@ -20,9 +21,9 @@ type={item.type}
 amount={item.amount}
  currency={item.currency}/>)
  )}
-   </tbody>
+   </tbody> 
 
-</table>
+</TransactionTableBox>
 )
 };
 

@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import {ContainerSection, TitleStatistic} from './StatisticSection.styled'
 
 export default function StatisticSection({ title, children }) {
 return (
-    <section>  
-        {title && <h2>{title}</h2>}
+    <ContainerSection>  
+        {title && <TitleStatistic>{title}</TitleStatistic>}
         {children}
-     </section>
+     </ContainerSection>
  )
 }
 
