@@ -5,8 +5,9 @@ export const TransactionTableBox = styled.table`
   width: 100%;
   max-width: 600px;
   border-collapse: collapse;
-  border-radius: 4px;
+  border-radius: 4px; 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+//   overflow: hidden;
 `;
 
 export const TransactionTh = styled.th`
